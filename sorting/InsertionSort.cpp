@@ -8,13 +8,21 @@ using namespace std;
 #include <bits/stdc++.h>
 
 
-void insertionSort(int *arr, int n) {
+void insertionSort(int *a, int n) {
 
+	for (int i = 1; i <= n - 1 ; i++) {
 
+		int current = a[i];
 
+		int prev = i - 1;
 
+		while (prev >= 0 && a[prev] > current) {
+			a[prev + 1] = a[prev];
+			prev--;
+		}
+		a[prev + 1] = current;
 
-
+	}
 }
 
 void printArray(int *arr, int n) {
@@ -32,23 +40,24 @@ int main()
 	freopen("output.txt", "w", stdout);
 #endif
 
-
-
-
 	int arr[] = { -2, -3, 4, -1, 5, -12, 6, 1, 3};
-
-	// cin >> arr;
 	int n = sizeof(arr) / sizeof(int);
+
 	printArray(arr, n);
-	for (auto &x : arr) {
-		cout << x << " ";
-	}
-	cout << endl;
+	insertionSort(arr, n);
 
 
-	//insertionSort(arr,n);
+	printArray(arr, n);
 
 
 
 }
+
+
+
+
+
+
+
+
 
