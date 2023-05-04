@@ -1,0 +1,16 @@
+{
+	"font_size": 17,
+	"color_scheme": "Packages/Color Scheme - Default/Monokai.sublime-color-scheme",
+	"ignored_packages":
+	[
+		"Vintage",
+	],
+
+	"auto_indent": true,
+	"translate_tabs_to_spaces": true,
+	"tab_size": 2,
+	
+
+
+
+}

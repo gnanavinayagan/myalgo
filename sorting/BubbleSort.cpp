@@ -43,10 +43,6 @@ void printArray(int *arr, int n) {
 int main()
 {
 
-#ifndef ONLINE_JUDGE
-  freopen("output.txt", "w", stdout);
-#endif
-
   int arr[] = { -2, -3, 4, -1, 5, -12, 6, 1, 3};
   int n = sizeof(arr) / sizeof(int);
 
@@ -56,7 +52,6 @@ int main()
 
 
   printArray(arr, n);
-
 
 
 }
